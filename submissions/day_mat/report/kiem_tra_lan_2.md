@@ -1,6 +1,6 @@
 # Bài kiểm tra lần 2 — Nhóm 14 — Phan-loai-muc-do-benh-vong-mac-dai-thao-duong
 
-- Fork: https://github.com/nnttrang05-design/hmyt-project
+- Fork: https://github.com/nnttrang05-design/hmyt-project 
 - Nhánh: `gd5-proposed-model`
 - Thành viên và vai trò:
   - 20233777 - Huấn luyện mô hình & Đánh giá
