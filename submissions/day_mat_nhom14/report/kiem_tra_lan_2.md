@@ -134,7 +134,7 @@ So sánh kết quả B1 với bài #2 (Interpreting DNNs, 2025):
 | Định nghĩa kết cục, nhãn, T0 | Đạt | 5 nhãn DR_ICDR, T0 là lúc chụp ảnh |
 | Chia theo bệnh nhân | Đạt | Code Assert 0% leak |
 | Mô hình mốc | Đạt | ResNet-18 |
-| AUC + calibration | **Chưa** | Chưa vẽ Calibration curve (sẽ làm nếu kịp) |
+| AUC + calibration | **Chưa** | Không áp dụng (tập trung vào F1-Score và Sensitivity thay vì Calibration curve) |
 | Cỡ mẫu đủ | Đạt | 13.015 ảnh Train |
 
 ---
