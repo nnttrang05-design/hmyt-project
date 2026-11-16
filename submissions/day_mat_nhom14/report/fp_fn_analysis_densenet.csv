@@ -1,0 +1,6 @@
+Muc do benh,True Positive,False Positive (FP),False Negative (FN),True Negative,Specificity
+0 Khong co,1441,24,47,107,0.8168
+1 Nhe,11,31,12,1565,0.9806
+2 Trung binh,29,22,21,1547,0.9860
+3 Nang,3,9,3,1604,0.9944
+4 Tang sinh,36,13,16,1554,0.9917
