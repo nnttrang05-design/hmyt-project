@@ -64,15 +64,15 @@ Bài báo này là lời cảnh báo rằng việc dùng XAI chưa đủ, mà XA
 ### B1. Kết quả hiện có
 | Mô hình | Tập đánh giá | Metric chính | Metric phụ | Nguồn số liệu |
 |---|---|---|---|---|
-| Baseline 1 (ResNet-18) | Test (Patient-level, n=1619) | Acc 93.08%, F1-Macro 53.86% | Sens (Nhãn 4): 80.77%, Spec: 98.28% | Kaggle Notebook (Cell 9 - Classification Report) |
-| Mô hình đề xuất (DenseNet-121) | Test (Patient-level, n=1619) | Acc 94.19% | FN (Nhãn 4) chỉ 7 ca | Kaggle Notebook (Cell 9 - Classification Report) |
-| Đang chạy (EfficientNet-B0) | Chưa có | Chưa có | Chưa  | Đang huấn luyện |
+| Baseline 1 (ResNet-18) | Test (Patient-level, n=1619) | Acc 93.08%, F1-Macro 53.86% | Sens (Nhãn 4): 80.77%, Spec: 98.28% | [classification_report_resnet18.csv](https://github.com/nnttrang05-design/hmyt-project/blob/gd5-proposed-model/submissions/day_mat_nhom14/report/classification_report_resnet18.csv) & [fp_fn_analysis_resnet18.csv](https://github.com/nnttrang05-design/hmyt-project/blob/gd5-proposed-model/submissions/day_mat_nhom14/report/fp_fn_analysis_resnet18.csv) |
+| Mô hình đề xuất (DenseNet-121) | Test (Patient-level, n=1619) | Acc 94.19% F1-Macro 54.81% | Sens (Nhãn 4): 82.69%, Spec: 98.12% | [classification_report_densenet.csv](https://github.com/nnttrang05-design/hmyt-project/blob/gd5-proposed-model/submissions/day_mat_nhom14/report/classification_report_densenet.csv) & [fp_fn_analysis_densenet.csv](https://github.com/nnttrang05-design/hmyt-project/blob/gd5-proposed-model/submissions/day_mat_nhom14/report/fp_fn_analysis_densenet.csv) |
+| Mô hình đè xuất (EfficientNet-B0) | Test (Patient-level, n=1619) | Acc 94.69% F1-Macro 59.31% | Sens (Nhãn 4): 78.85%, Spec: 98.91% | [classification_report_efficientnet.csv](https://github.com/nnttrang05-design/hmyt-project/blob/gd5-proposed-model/submissions/day_mat_nhom14/report/classification_report_efficientnet.csv) & [fp_fn_analysis_efficientnet.csv](https://github.com/nnttrang05-design/hmyt-project/blob/gd5-proposed-model/submissions/day_mat_nhom14/report/fp_fn_analysis_efficientnet.csv) |
 
 ### B2. Ablation (Mốc 3)
 | Cấu hình | Metric chính | Chênh lệch | Nguồn |
 |---|---|---|---|
-| Đầy đủ (ROI + CLAHE + Weighted Loss) | Acc 93.08% | Không áp dụng | Cell 8-9 |
-| Chưa thực hiện (Dự kiến: Bỏ CLAHE, Bỏ Circular Masking) | Chưa có | Không áp dụng | Sẽ làm ở Mốc 4 |
+| Đầy đủ (ROI + CLAHE + Weighted Loss) | Acc 93.08% | Không áp dụng | [classification_report_resnet18.csv](https://github.com/nnttrang05-design/hmyt-project/blob/gd5-proposed-model/submissions/day_mat_nhom14/report/classification_report_resnet18.csv) |
+| Chưa thực hiện (Dự kiến: Bỏ CLAHE, Bỏ Circular Masking) | N\A | Không áp dụng | Sẽ làm ở Mốc 4 |
 
 ### B3. Đối chiếu với y văn
 So sánh kết quả B1 với bài #2 (Interpreting DNNs, 2025):
